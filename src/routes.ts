@@ -1,7 +1,8 @@
 import express from 'express';
-import PokemonController from 'controllers/Pokemon';
-import TypesEffectivenessController from 'controllers/TypesEffectiveness';
-import EvolutionsController from 'controllers/Evolutions';
+
+import PokemonController from './controllers/Pokemon';
+import TypesEffectivenessController from './controllers/TypesEffectiveness';
+import EvolutionsController from './controllers/Evolutions';
 
 const routes = express.Router();
 

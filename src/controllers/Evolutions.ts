@@ -1,11 +1,12 @@
 import { Request, Response } from 'express';
-import pokeApi from 'services/pokemonApi';
-import { Evolution, Specie } from 'types';
+
+import pokeApi from '../services/pokemonApi';
+import { Evolution, Specie } from '../types';
 import {
   capitalizeFirstLetter,
   getPokemonIdByUrl,
   getPokemonImageById,
-} from 'utils';
+} from '../utils';
 
 export default class EvolutionController {
   public async show(request: Request, response: Response): Promise<Response> {

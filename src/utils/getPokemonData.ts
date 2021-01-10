@@ -1,5 +1,5 @@
-import { Pokemon, Specie } from 'types';
-import pokeApi from 'services/pokemonApi';
+import { Pokemon, Specie } from '../types';
+import pokeApi from '../services/pokemonApi';
 
 import capitalizeFirstLetter from './capitalizeFirstLetter';
 import getPokemonImageById from './getPokemonImageById';

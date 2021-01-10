@@ -1,7 +1,8 @@
 import { Request, Response } from 'express';
-import { ApiResult, Type } from 'types';
-import pokeApi from 'services/pokemonApi';
-import { capitalizeFirstLetter } from 'utils';
+
+import { ApiResult, Type } from '../types';
+import pokeApi from '../services/pokemonApi';
+import { capitalizeFirstLetter } from '../utils';
 
 type DemageRelations = {
   multiplier: string;

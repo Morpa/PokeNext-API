@@ -1,7 +1,8 @@
 import { Request, Response } from 'express';
-import { getPokemonData, getPokemonIdByUrl } from 'utils';
-import { ApiResult } from 'types';
-import pokeApi from 'services/pokemonApi';
+
+import { getPokemonData, getPokemonIdByUrl } from '../utils';
+import { ApiResult } from '../types';
+import pokeApi from '../services/pokemonApi';
 
 export default class PokemonController {
   public async index(request: Request, response: Response): Promise<Response> {

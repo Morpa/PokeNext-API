@@ -15,7 +15,9 @@ export default class TypesEffectiveness {
 
     const { data: typesData } = await pokeApi.get<ApiResult>(`/type`);
 
-    const { data: typeData } = await pokeApi.get<Type>(`/type/${type}`);
+    const { data: typeData } = await pokeApi.get<Type>(
+      `/type/${type.toLowerCase()}`,
+    );
 
     const allTypes = typesData.results;
 
